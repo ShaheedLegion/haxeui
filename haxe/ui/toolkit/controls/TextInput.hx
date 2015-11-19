@@ -178,6 +178,17 @@ class TextInput extends StateComponent implements IClonable<TextInput> {
 	}
 	
 	//******************************************************************************************
+	// Public method to easily get the text from this component.
+	//******************************************************************************************
+	public function getInputText():String {
+		return get_text();
+	}
+	
+	public function setInputText(value:String):String {
+		return set_text();
+	}
+	
+	//******************************************************************************************
 	// IStyleable
 	//******************************************************************************************
 	public override function applyStyle():Void {
